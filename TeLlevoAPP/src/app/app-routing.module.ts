@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'vista-cliente',
+    loadChildren: () => import('./vista-cliente/vista-cliente.module').then( m => m.VistaClientePageModule)
+  },
+  {
+    path: 'vista-conductor',
+    loadChildren: () => import('./vista-conductor/vista-conductor.module').then( m => m.VistaConductorPageModule)
+  },
 ];
 
 @NgModule({
