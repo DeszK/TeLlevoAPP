@@ -1,0 +1,13 @@
+ion-item {
+    ion-label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      ion-note {
+        margin-top: 4px; /* Espacio entre el texto principal y la nota */
+        font-size: 0.9em; /* Tamaño de fuente de la nota */
+        color: #888; /* Color de la nota */
+      }
+    }
+  }
