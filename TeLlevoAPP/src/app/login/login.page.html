@@ -10,48 +10,57 @@
       <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div id="container">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Iniciar Sesión</ion-card-title>
-      </ion-card-header>
-      
-      <ion-card-content>
-        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
-          <ion-item>
-            <ion-label position="floating">Correo Electrónico</ion-label>
-            <ion-input type="email" name="email" [(ngModel)]="email" required></ion-input>
-          </ion-item>
-          
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" name="password" [(ngModel)]="password" required></ion-input>
-          </ion-item>
-          
-          <ion-button expand="full" type="submit" [disabled]="!loginForm.form.valid">Iniciar Sesión</ion-button>
-        </form>
-      </ion-card-content>
-    </ion-card>
-  </div>
-  
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="person" [routerLink]="['/login']">
-        <ion-icon name="person"></ion-icon>
-        Iniciar Sesion
-      </ion-tab-button>
-      <ion-tab-button tab="car" [routerLink]="['/registro']">
-        <ion-icon name="car"></ion-icon>
-        Conductor
-      </ion-tab-button>
-      <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
-        <ion-icon name="pin"></ion-icon>
-        Ruta
-      </ion-tab-button>
-      <ion-tab-button tab="search" [routerLink]="['/vista-conductor']">
-        <ion-icon name="search"></ion-icon>
-        Buscar
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Iniciar Sesión</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-item>
+        <ion-label  position="floating">Nombre de Usuario</ion-label>
+        <br>
+        <br>
+        <ion-input type="text" placeholder="Ingrese su Nombre de Usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <br>
+        <br>
+        <ion-input type="password" placeholder="Ingrese su Contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+    <br>
+    <ion-button color="success" expand="full">INGRESAR</ion-button>
+    <div class="button-container">
+      <ion-button>Registrarse</ion-button>
+      <ion-button>Recuperar Cuentas</ion-button>
+    </div>
+  </ion-card>
 </ion-content>
+<!-- FOOTER-->
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="person" [routerLink]="['/login']">
+          <ion-icon name="person"></ion-icon>
+          Iniciar Sesion
+        </ion-tab-button>
+        <ion-tab-button tab="car" [routerLink]="['/registro']">
+          <ion-icon name="car"></ion-icon>
+          Conductor
+        </ion-tab-button>
+        <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
+          <ion-icon name="pin"></ion-icon>
+          Ruta
+        </ion-tab-button>
+        <ion-tab-button tab="search" [routerLink]="['/vista-conductor']">
+          <ion-icon name="search"></ion-icon>
+          Buscar
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+
+  </ion-toolbar>
+</ion-footer>
