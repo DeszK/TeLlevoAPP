@@ -1,35 +1,140 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>VistaCliente</ion-title>
+    <ion-title>Rutas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">VistaCliente</ion-title>
+      <ion-title size="large">Rutas</ion-title>
     </ion-toolbar>
   </ion-header>
   <div id="container">
-    <ion-card>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card color="primary">
       <ion-card-header>
-        <ion-card-title>Card Title</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Aqui puedes ver las rutas que nuestros conductores van a hacer!</ion-card-title>
       </ion-card-header>
-    
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
-      </ion-card-content>
     </ion-card>
   </div>
+  <br><br>
+  <div class="container" style="margin-left: 10px; margin-right: 10px">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.393620563252!2d-70.59905671790166!3d-33.517150275267326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1002475f343%3A0xb0f57d50b30fac1f!2sDuoc%20Plaza%20Vespucio!5e0!3m2!1ses-419!2scl!4v1725463048420!5m2!1ses-419!2scl" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <br><br>
   
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Lista de Conductores</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg"/>
+          </ion-thumbnail>
+          <ion-label>Conductor 1
+            <ion-note color="medium">Americo Vespucio 69</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+          </ion-thumbnail>
+          <ion-label>Conductor 2
+            <ion-note color="medium">APichilemu</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+          </ion-thumbnail>
+          <ion-label>Conductor 3
+            <ion-note color="medium">Peumos</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+          </ion-thumbnail>
+          <ion-label>Conductor 4
+            <ion-note color="medium">Punta Arenas</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
 
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+          </ion-thumbnail>
+          <ion-label>Conductor 5
+            <ion-note color="medium">Calle falsa 123</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+          </ion-thumbnail>
+          <ion-label>Conductor 6
+            <ion-note color="medium">Peru</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+          </ion-thumbnail>
+          <ion-label>Conductor 7
+            <ion-note color="medium">Saturno</ion-note>
+          </ion-label>
+          <ion-button size="small">
+            Ver Ruta
+            <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
+  <ion-footer>
+  <ion-toolbar>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" [routerLink]="['/home']">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+      </ion-tab-button>
       <ion-tab-button tab="person" [routerLink]="['/login']">
         <ion-icon name="person"></ion-icon>
-        Iniciar Secion
+        Iniciar Sesion
       </ion-tab-button>
       <ion-tab-button tab="car" [routerLink]="['/registro']">
         <ion-icon name="car"></ion-icon>
@@ -45,4 +150,6 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
-</ion-content>
+  </ion-toolbar>
+  </ion-footer>
+  

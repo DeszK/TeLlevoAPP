@@ -14,9 +14,13 @@
 
   <ion-tabs>
     <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" [routerLink]="['/home']">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+      </ion-tab-button>
       <ion-tab-button tab="person" [routerLink]="['/login']">
         <ion-icon name="person"></ion-icon>
-        Iniciar Secion
+        Iniciar Sesion
       </ion-tab-button>
       <ion-tab-button tab="car" [routerLink]="['/registro']">
         <ion-icon name="car"></ion-icon>
