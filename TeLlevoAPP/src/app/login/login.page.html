@@ -11,32 +11,26 @@
     </ion-toolbar>
   </ion-header>
 
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Iniciar Sesión</ion-card-title>
-    </ion-card-header>
-    <ion-list>
-      <ion-item>
-        <ion-label  position="floating">Nombre de Usuario</ion-label>
-        <br>
-        <br>
-        <ion-input type="text" placeholder="Ingrese su Nombre de Usuario"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Contraseña</ion-label>
-        <br>
-        <br>
-        <ion-input type="password" placeholder="Ingrese su Contraseña"></ion-input>
-      </ion-item>
-    </ion-list>
-    <br>
-    <ion-button color="success" expand="full">INGRESAR</ion-button>
-    <div class="button-container">
-      <ion-button>Registrarse</ion-button>
-      <ion-button>Recuperar Cuentas</ion-button>
-    </div>
-  </ion-card>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="person" [routerLink]="['/login']">
+        <ion-icon name="person"></ion-icon>
+        Iniciar Sesion
+      </ion-tab-button>
+      <ion-tab-button tab="car" [routerLink]="['/registro']">
+        <ion-icon name="car"></ion-icon>
+        Conductor
+      </ion-tab-button>
+      <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
+        <ion-icon name="pin"></ion-icon>
+        Ruta
+      </ion-tab-button>
+      <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
+        <ion-icon name="man-outline"></ion-icon>
+        Buscar
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
 <!-- FOOTER-->
 <ion-footer>
