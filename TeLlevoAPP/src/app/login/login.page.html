@@ -12,18 +12,28 @@
   </ion-header>
   <div id="container">
     <ion-card>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
       <ion-card-header>
-        <ion-card-title>Card Title</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Iniciar Sesión</ion-card-title>
       </ion-card-header>
-    
+      
       <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
+        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+          <ion-item>
+            <ion-label position="floating">Correo Electrónico</ion-label>
+            <ion-input type="email" name="email" [(ngModel)]="email" required></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" name="password" [(ngModel)]="password" required></ion-input>
+          </ion-item>
+          
+          <ion-button expand="full" type="submit" [disabled]="!loginForm.form.valid">Iniciar Sesión</ion-button>
+        </form>
       </ion-card-content>
     </ion-card>
   </div>
-
+  
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="person" [routerLink]="['/login']">
