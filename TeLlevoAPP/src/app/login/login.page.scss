@@ -1,17 +1,32 @@
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 16px;
-  }
-  
-  ion-card {
-    width: 100%;
-    max-width: 500px;
-  }
-  .button-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-  }
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ion-card {
+  width: 90%;
+  max-width: 500px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.left-button {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.right-button {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.submit-button {
+  --border-radius: 50px; /* Hacer el botón más redondo */
+  --background: #3880ff; /* Cambiar el color de fondo del botón */
+}
