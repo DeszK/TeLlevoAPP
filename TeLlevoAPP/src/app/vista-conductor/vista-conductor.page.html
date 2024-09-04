@@ -10,4 +10,26 @@
       <ion-title size="large">VistaConductor</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="person" [routerLink]="['/Login']">
+        <ion-icon name="person"></ion-icon>
+        Iniciar Secion
+      </ion-tab-button>
+      <ion-tab-button tab="car" [routerLink]="['/Registro']">
+        <ion-icon name="car"></ion-icon>
+        Conductor
+      </ion-tab-button>
+      <ion-tab-button tab="pin" [routerLink]="['/VistaCliente']">
+        <ion-icon name="pin"></ion-icon>
+        Ruta
+      </ion-tab-button>
+      <ion-tab-button tab="search" [routerLink]="['/VistaConductor']">
+        <ion-icon name="search"></ion-icon>
+        Buscar
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
