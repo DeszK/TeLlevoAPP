@@ -10,26 +10,30 @@
       <ion-title size="large">VistaConductor</ion-title>
     </ion-toolbar>
   </ion-header>
-
-
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="person" [routerLink]="['/login']">
-        <ion-icon name="person"></ion-icon>
-        Iniciar Sesion
-      </ion-tab-button>
-      <ion-tab-button tab="car" [routerLink]="['/registro']">
-        <ion-icon name="car"></ion-icon>
-        Conductor
-      </ion-tab-button>
-      <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
-        <ion-icon name="pin"></ion-icon>
-        Ruta
-      </ion-tab-button>
-      <ion-tab-button tab="search" [routerLink]="['/vista-conductor']">
-        <ion-icon name="search"></ion-icon>
-        Buscar
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
 </ion-content>
+<!-- FOOTER-->
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="person" [routerLink]="['/login']">
+          <ion-icon name="person"></ion-icon>
+          Iniciar Sesion
+        </ion-tab-button>
+        <ion-tab-button tab="car" [routerLink]="['/registro']">
+          <ion-icon name="car"></ion-icon>
+          Conductor
+        </ion-tab-button>
+        <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
+          <ion-icon name="pin"></ion-icon>
+          Ruta
+        </ion-tab-button>
+        <ion-tab-button tab="search" [routerLink]="['/vista-conductor']">
+          <ion-icon name="search"></ion-icon>
+          Buscar
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
+
