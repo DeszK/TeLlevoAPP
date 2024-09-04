@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'vista-conductor',
     loadChildren: () => import('./vista-conductor/vista-conductor.module').then( m => m.VistaConductorPageModule)
+  },  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+
 ];
 
 @NgModule({
