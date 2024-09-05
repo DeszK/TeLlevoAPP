@@ -31,8 +31,8 @@
     <ion-button (click)="login()" class="submit-button" color="success" expand="full">INGRESAR</ion-button>
 
     <div class="button-container">
-      <ion-button class="left-button">Registrarse</ion-button>
-      <ion-button class="right-button">Recuperar Cuentas</ion-button>
+      <ion-button class="left-button" [routerLink]="['/registro']">Registrarse</ion-button>
+      <ion-button class="right-button">Recuperar Cuenta</ion-button>
     </div>
 
     <ion-text color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
@@ -49,14 +49,12 @@
           <ion-icon name="home-outline"></ion-icon>
           Home
         </ion-tab-button>
-        <ion-tab-button tab="car" [routerLink]="['/registro']">
-          <ion-icon name="person-add"></ion-icon>
-          Registrarse
-        </ion-tab-button>
+
         <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
           <ion-icon name="pin"></ion-icon>
           Ruta
         </ion-tab-button>
+        
         <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
           <ion-icon name="man-outline"></ion-icon>
           Buscar

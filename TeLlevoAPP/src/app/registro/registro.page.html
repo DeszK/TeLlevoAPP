@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Registro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/login"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -12,18 +15,25 @@
   </ion-header>
 
  <!-- Formulario -->
-<ion-list>
+  <ion-card>
 
-  <ion-item>
-    <ion-input label="usuario" labelPlacement="floating" placeholder="Enter text" [(ngModel)]="data.user"></ion-input>
-  </ion-item>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
 
-  <ion-item>
-    <ion-input label="password" type="password" labelPlacement="floating" placeholder="Enter text" [(ngModel)]="data.pw"></ion-input>
-  </ion-item>
+    <ion-list>
 
-</ion-list>
-  <ion-button >INGRESAR</ion-button>
+      <ion-item>
+        <ion-input label="Usuario" labelPlacement="floating" placeholder="Enter text" [(ngModel)]="data.user"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Contraseña" type="password" labelPlacement="floating" placeholder="Enter text" [(ngModel)]="data.pw"></ion-input>
+      </ion-item>
+
+    </ion-list>
+      <ion-button color="success" expand="full" [routerLink]="['/home']">INGRESAR</ion-button>
+  </ion-card>
 </ion-content><!--Fin del principal-->
 
 <!-- FOOTER-->
