@@ -124,32 +124,29 @@
   </ion-card>
   
 </ion-content>
-  <ion-footer>
+<!-- FOOTER-->
+<ion-footer>
   <ion-toolbar>
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home" [routerLink]="['/home']">
-        <ion-icon name="home-outline"></ion-icon>
-        Home
-      </ion-tab-button>
-      <ion-tab-button tab="person" [routerLink]="['/login']">
-        <ion-icon name="person"></ion-icon>
-        Iniciar Sesion
-      </ion-tab-button>
-      <ion-tab-button tab="car" [routerLink]="['/registro']">
-        <ion-icon name="car"></ion-icon>
-        Conductor
-      </ion-tab-button>
-      <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
-        <ion-icon name="pin"></ion-icon>
-        Ruta
-      </ion-tab-button>
-      <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
-        <ion-icon name="man-outline"></ion-icon>
-        Buscar
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" [routerLink]="['/home']">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button tab="person" [routerLink]="['/login']">
+          <ion-icon name="person"></ion-icon>
+          Iniciar Sesion
+        </ion-tab-button>
+        <ion-tab-button tab="car" [routerLink]="['/registro']">
+          <ion-icon name="person-add"></ion-icon>
+          Registrarse
+        </ion-tab-button>
+        <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
+          <ion-icon name="man-outline"></ion-icon>
+          Buscar
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
   </ion-toolbar>
-  </ion-footer>
+</ion-footer>
   

@@ -1,61 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>VistaConductor</ion-title>
+    <ion-title>Buscardor</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">VistaConductor</ion-title>
+      <ion-searchbar></ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
-
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home" [routerLink]="['/home']">
-        <ion-icon name="home-outline"></ion-icon>
-        Home
-      </ion-tab-button>
-      <ion-tab-button tab="person" [routerLink]="['/login']">
-        <ion-icon name="person"></ion-icon>
-        Iniciar Sesion
-      </ion-tab-button>
-      <ion-tab-button tab="car" [routerLink]="['/registro']">
-        <ion-icon name="car"></ion-icon>
-        Conductor
-      </ion-tab-button>
-      <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
-        <ion-icon name="pin"></ion-icon>
-        Ruta
-      </ion-tab-button>
-      <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
-        <ion-icon name="man-outline"></ion-icon>
-        Buscar
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
 </ion-content>
 <!-- FOOTER-->
 <ion-footer>
   <ion-toolbar>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="person" [routerLink]="['/login']">
-          <ion-icon name="person"></ion-icon>
-          Iniciar Sesion
+        <ion-tab-button tab="home" [routerLink]="['/home']">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
         </ion-tab-button>
-        <ion-tab-button tab="car" [routerLink]="['/registro']">
-          <ion-icon name="car"></ion-icon>
-          Conductor
+        <ion-tab-button tab="help" [routerLink]="['/help']">
+          <ion-icon name="help-circle-outline"></ion-icon>
+          Ayuda
         </ion-tab-button>
         <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
           <ion-icon name="pin"></ion-icon>
           Ruta
         </ion-tab-button>
-        <ion-tab-button tab="search" [routerLink]="['/vista-conductor']">
-          <ion-icon name="search"></ion-icon>
+        <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
+          <ion-icon name="man-outline"></ion-icon>
           Buscar
         </ion-tab-button>
       </ion-tab-bar>

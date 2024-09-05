@@ -1,15 +1,3 @@
-.center-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-ion-card {
-  width: 90%;
-  max-width: 500px;
-}
-
 .button-container {
   display: flex;
   justify-content: space-between;
@@ -24,9 +12,4 @@ ion-card {
 .right-button {
   flex: 1;
   margin-left: 5px;
-}
-
-.submit-button {
-  --border-radius: 50px; /* Hacer el botón más redondo */
-  --background: #3880ff; /* Cambiar el color de fondo del botón */
 }
