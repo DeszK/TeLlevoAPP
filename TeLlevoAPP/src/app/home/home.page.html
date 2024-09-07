@@ -29,21 +29,25 @@
   <ion-toolbar>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="person" [routerLink]="['/login']">
+        <ion-tab-button tab="person" [routerLink]="['/home']" class="highlight-tab">
+          <ion-icon name="home"></ion-icon>
+          Inicio
+        </ion-tab-button>
+        <ion-tab-button tab="person" [routerLink]="['/vista-cliente']">
+          <ion-icon name="pin"></ion-icon>
+          Rutas
+        </ion-tab-button>
+        <ion-tab-button tab="person" [routerLink]="['/vista-conductor']">
+          <ion-icon name="car-sport"></ion-icon>
+          Conductor
+        </ion-tab-button>
+        <ion-tab-button tab="car" [routerLink]="['/login']">
           <ion-icon name="person"></ion-icon>
           Iniciar Sesion
         </ion-tab-button>
-        <ion-tab-button tab="car" [routerLink]="['/registro']">
+        <ion-tab-button tab="pin" [routerLink]="['/registro']">
           <ion-icon name="person-add"></ion-icon>
           Registrarse
-        </ion-tab-button>
-        <ion-tab-button tab="pin" [routerLink]="['/vista-cliente']">
-          <ion-icon name="pin"></ion-icon>
-          Ruta
-        </ion-tab-button>
-        <ion-tab-button tab="search" [routerLink]="['/vista-conductor']">
-          <ion-icon name="search"></ion-icon>
-          Buscar
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>

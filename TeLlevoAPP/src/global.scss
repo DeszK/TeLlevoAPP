@@ -35,3 +35,12 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+.highlight-tab {
+    background-color: #3A3B3C;
+    color: #ffffff; /* Cambia el texto a blanco para un buen contraste */
+  }
+  
+  .highlight-tab ion-icon {
+    color: #ffffff; /* Cambia el color del icono */
+  }

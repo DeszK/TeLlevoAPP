@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaConductorPage implements OnInit {
 
+  alertButtons = ['Aceptar'];
   constructor() { }
 
   ngOnInit() {

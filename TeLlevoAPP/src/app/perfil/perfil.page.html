@@ -31,8 +31,46 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.240064763093!2d51.64102869272839!3d25.296137229021078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c87fa414e069%3A0x83e8b44697568444!2sBanana%20Island!5e0!3m2!1ses-419!2scl!4v1725466860311!5m2!1ses-419!2scl" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <br>
+  <div style="text-align: center;">
+    <ion-button id="present-alertt">Tomar este Viaje</ion-button>
+    <ion-alert
+      trigger="present-alertt"
+      header="Viaje seleccionado con exito!"
+      message="Se le ha informado al conductor que vas a viajar con el"
+      [buttons]="alertButtonss"[routerLink]="['/vista-cliente']"
+    ></ion-alert>
+  </div>
+<br>
+
   
 
 </ion-content>
 
-
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="person" [routerLink]="['/home']">
+          <ion-icon name="home"></ion-icon>
+          Inicio
+        </ion-tab-button>
+        <ion-tab-button tab="person" [routerLink]="['/vista-cliente']">
+          <ion-icon name="pin"></ion-icon>
+          Rutas
+        </ion-tab-button>
+        <ion-tab-button tab="person" [routerLink]="['/vista-conductor']">
+          <ion-icon name="car-sport"></ion-icon>
+          Conductor
+        </ion-tab-button>
+        <ion-tab-button tab="car" [routerLink]="['/login']">
+          <ion-icon name="person"></ion-icon>
+          Iniciar Sesion
+        </ion-tab-button>
+        <ion-tab-button tab="pin" [routerLink]="['/registro']">
+          <ion-icon name="person-add"></ion-icon>
+          Registrarse
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

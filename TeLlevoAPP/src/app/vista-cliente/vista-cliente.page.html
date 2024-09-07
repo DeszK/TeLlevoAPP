@@ -19,6 +19,7 @@
   </div>
   <br><br>
   <div class="container" style="margin-left: 10px; margin-right: 10px">
+    <h3>Selecciona ubicacion de destino</h3>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.393620563252!2d-70.59905671790166!3d-33.517150275267326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1002475f343%3A0xb0f57d50b30fac1f!2sDuoc%20Plaza%20Vespucio!5e0!3m2!1ses-419!2scl!4v1725463048420!5m2!1ses-419!2scl" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <br><br>
@@ -44,10 +45,10 @@
   
         <ion-item>
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+            <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB67PA8faen0cavLrWoBZeoTnuezVBIzWHQ&s" />
           </ion-thumbnail>
           <ion-label>Conductor 2
-            <ion-note color="medium">APichilemu</ion-note>
+            <ion-note color="medium">Pichilemu</ion-note>
           </ion-label>
           <ion-button size="small" [routerLink]="['/perfil']">
             Ver Ruta
@@ -57,7 +58,7 @@
   
         <ion-item>
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+            <img alt="Silhouette of mountains" src="https://img.blogs.es/vizzagency/wp-content/uploads/2022/09/edit-14-819x1024.jpg" />
           </ion-thumbnail>
           <ion-label>Conductor 3
             <ion-note color="medium">Peumos</ion-note>
@@ -70,7 +71,7 @@
   
         <ion-item lines="none">
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Sergio_Freire.jpg" />
           </ion-thumbnail>
           <ion-label>Conductor 4
             <ion-note color="medium">Punta Arenas</ion-note>
@@ -83,7 +84,7 @@
 
         <ion-item lines="none">
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+            <img alt="Silhouette of mountains" src="https://www.cidob.org/sites/default/files/styles/max_width_290/public/gabriel_boric_font.jpg.webp?itok=DrVy1kh7" />
           </ion-thumbnail>
           <ion-label>Conductor 5
             <ion-note color="medium">Calle falsa 123</ion-note>
@@ -96,7 +97,7 @@
 
         <ion-item lines="none">
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+            <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdX_E-rOOJqMWFUVGC1RqvCsGWFTqThFeneg&s" />
           </ion-thumbnail>
           <ion-label>Conductor 6
             <ion-note color="medium">Peru</ion-note>
@@ -109,7 +110,7 @@
 
         <ion-item lines="none">
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Retrato_Oficial_Presidente_Pi%C3%B1era_2018.jpg" />
+            <img alt="Silhouette of mountains" src="https://s.13.cl/sites/default/files/styles/manualcrop_850x475/public/programas/articulos/field-imagen/2022-05/karoldance.jpg.jpeg?itok=056uhf2V" />
           </ion-thumbnail>
           <ion-label>Conductor 7
             <ion-note color="medium">Saturno</ion-note>
@@ -129,21 +130,25 @@
   <ion-toolbar>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="home" [routerLink]="['/home']">
-          <ion-icon name="home-outline"></ion-icon>
-          Home
+        <ion-tab-button tab="person" [routerLink]="['/home']">
+          <ion-icon name="home"></ion-icon>
+          Inicio
         </ion-tab-button>
-        <ion-tab-button tab="person" [routerLink]="['/login']">
+        <ion-tab-button tab="person" [routerLink]="['/vista-cliente']" class="highlight-tab">
+          <ion-icon name="pin"></ion-icon>
+          Rutas
+        </ion-tab-button>
+        <ion-tab-button tab="person" [routerLink]="['/vista-conductor']">
+          <ion-icon name="car-sport"></ion-icon>
+          Conductor
+        </ion-tab-button>
+        <ion-tab-button tab="car" [routerLink]="['/login']">
           <ion-icon name="person"></ion-icon>
           Iniciar Sesion
         </ion-tab-button>
-        <ion-tab-button tab="car" [routerLink]="['/registro']">
+        <ion-tab-button tab="pin" [routerLink]="['/registro']">
           <ion-icon name="person-add"></ion-icon>
           Registrarse
-        </ion-tab-button>
-        <ion-tab-button tab="man" [routerLink]="['/vista-conductor']">
-          <ion-icon name="man-outline"></ion-icon>
-          Buscar
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
