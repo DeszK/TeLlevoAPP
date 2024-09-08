@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';  // Importar el Router
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,8 +12,10 @@ export class LoginPage implements OnInit {
   password: string = '';
   errorMessage: string = '';
   successMessage: string = '';
+  isLoading: boolean = false;  // Variable de estado para el spinner
+  keepLoggedIn: boolean = false;
 
-  constructor(private router: Router) { }  // Inyectar el Router en el constructor
+  constructor(private router: Router) { }  
 
   ngOnInit() { }
 
@@ -24,13 +26,12 @@ export class LoginPage implements OnInit {
     if (!this.username || !this.password) {
       this.errorMessage = 'Por favor, complete ambos campos.';
     } else {
-      this.successMessage = 'Iniciando sesión...';
+      this.isLoading = true;  // Muestra el spinner
 
-      // Simular un pequeño retraso para que se vea el mensaje "Iniciando sesión"
       setTimeout(() => {
-        // Redirigir a /vista-cliente
+        this.isLoading = false;  // Oculta el spinner
         this.router.navigate(['/vista-cliente']);
-      }, 1000);  // Retraso de 1 segundo para mostrar el mensaje
+      }, 3000);  // Simula un tiempo de espera para la autenticación
     }
   }
 }

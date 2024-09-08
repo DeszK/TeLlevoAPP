@@ -11,11 +11,18 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
+<!-- Animacion-->
+   <!-- Componente para la animación de carga -->
+   <div *ngIf="isLoading" class="loading-container">
+    <div class="loading-spinner"></div>
+    <p>Cargando...</p>
+  </div>
+  <!-- Formulario de login (se oculta durante la carga) -->
+  <ion-card *ngIf="!isLoading">
     <ion-card-header>
       <ion-card-title>Iniciar Sesión</ion-card-title>
     </ion-card-header>
-    
+<!--Fin Animacion-->
     <ion-list>
       <ion-item>
         <ion-label position="floating">Nombre de Usuario</ion-label>
@@ -26,13 +33,15 @@
         <ion-input type="password" [(ngModel)]="password"></ion-input>
       </ion-item>
     </ion-list>
-
     <br>
+    <div class="checkbox-container">
+      <ion-checkbox [(ngModel)]="keepLoggedIn"></ion-checkbox>
+      <ion-label>Mantener la sesión iniciada</ion-label>
+    </div>
     <ion-button (click)="login()" class="submit-button" color="success" expand="full">INGRESAR</ion-button>
 
     <div class="button-container">
       <ion-button class="left-button" [routerLink]="['/registro']">Registrarse</ion-button>
-      <ion-button class="right-button">Recuperar Cuenta</ion-button>
     </div>
 
     <ion-text color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
