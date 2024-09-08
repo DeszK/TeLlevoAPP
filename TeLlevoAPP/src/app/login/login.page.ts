@@ -34,4 +34,5 @@ export class LoginPage implements OnInit {
       }, 3000);  // Simula un tiempo de espera para la autenticación
     }
   }
+  
 }

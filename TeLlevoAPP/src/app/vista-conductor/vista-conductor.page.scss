@@ -1,0 +1,79 @@
+$sport-car-color: #747474;
+$wheel-color: #333;
+$window-color: #B3E5FC;
+$window-border-color: #0288D1;
+$duoc-color: #FFFF00; 
+$uc-color: #000081;  
+$car-text-color: #FFFFFF;
+
+.autito-duoc {
+    position: relative;
+    width: 220px;
+    height: 120px;
+    margin: 100px auto;
+    overflow: hidden; 
+    
+    .cuerpo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: $sport-car-color;
+        border-radius: 20px;
+        padding: 20px 10px 0;
+
+        .ventana {
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            background-color: $window-color;
+            border-radius: 10px;
+            border: 2px solid $window-border-color;
+            
+            &.ventana-delantera {
+                top: 10px;
+                left: 20px;
+            }
+            
+            &.ventana-trasera {
+                top: 10px;
+                right: 20px;
+            }
+        }
+
+        .auto-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            
+            .duoc {
+                color: $duoc-color;
+            }
+            
+            .uc {
+                color: $uc-color;
+            }
+        }
+    }
+
+    .rueda {
+        position: absolute;
+        bottom: -15px;
+        width: 50px;
+        height: 50px;
+        background-color: $wheel-color;
+        border-radius: 50%;
+
+        &.delante {
+            left: 30px;
+        }
+        
+        &.atras {
+            right: 30px;
+        }
+    }
+}
