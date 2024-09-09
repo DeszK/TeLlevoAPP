@@ -30,7 +30,7 @@ export class LoginPage implements OnInit {
 
       setTimeout(() => {
         this.isLoading = false;  // Oculta el spinner
-        this.router.navigate(['/vista-cliente']);
+        this.router.navigate(['/home']);
       }, 3000);  // Simula un tiempo de espera para la autenticación
     }
   }

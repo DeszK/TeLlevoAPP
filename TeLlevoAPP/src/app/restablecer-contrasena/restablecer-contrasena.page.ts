@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-registro',
-  templateUrl: './registro.page.html',
-  styleUrls: ['./registro.page.scss'],
+  selector: 'app-restablecer-contrasena',
+  templateUrl: './restablecer-contrasena.page.html',
+  styleUrls: ['./restablecer-contrasena.page.scss'],
 })
-export class RegistroPage implements OnInit {
+export class RestablecerContrasenaPage implements OnInit {
   //ATRIBUTOS
   alertButtonss = ['Aceptar'];
   data = {
@@ -16,7 +16,7 @@ export class RegistroPage implements OnInit {
   constructor(private alertController: AlertController) { }
   async presentAlert() {
     const alert = await this.alertController.create({
-      header: `Bienvenido a TeLlevoApp ${this.data.user}`,
+      header: `Bienvenido de vuelta a TeLlevoApp ${this.data.user}`,
       buttons: ['Aceptar'],
     });
 
