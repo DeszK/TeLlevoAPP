@@ -7,3 +7,33 @@
 <ion-content [fullscreen]="true">
   <app-cars></app-cars>
 </ion-content>
+
+<!-- FOOTER-->
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/inicio']" class="highlight-tab">
+          <ion-icon name="home"></ion-icon>
+          Inicio
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/vista-cliente']">
+          <ion-icon name="pin"></ion-icon>
+          Rutas
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/vista-conductor']">
+          <ion-icon name="car-sport"></ion-icon>
+          Conductor
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/login']">
+          <ion-icon name="person"></ion-icon>
+          Iniciar Sesion
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/registro']">
+          <ion-icon name="person-add"></ion-icon>
+          Registrarse
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
