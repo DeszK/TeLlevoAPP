@@ -1,0 +1,22 @@
+/* Establece el fondo celeste para el ion-content */
+ion-content {
+    background-color: #add8e6; /* Celeste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Centra el contenido dentro del contenedor */
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Para ocupar toda la altura */
+  }
+  
+  /* Cambia el color de fondo de la tarjeta */
+  ion-card {
+    background-color: #87cefa; /* Azul claro */
+    width: 90%; /* Puedes ajustar el ancho según tus necesidades */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+  }
