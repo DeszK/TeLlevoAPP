@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { VistaConductorPageRoutingModule } from './vista-conductor-routing.module';
 
 import { VistaConductorPage } from './vista-conductor.page';
+import { CarsComponent } from '../components/cars/cars.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { VistaConductorPage } from './vista-conductor.page';
     IonicModule,
     VistaConductorPageRoutingModule
   ],
-  declarations: [VistaConductorPage]
+  declarations: [VistaConductorPage,CarsComponent]
 })
 export class VistaConductorPageModule {}

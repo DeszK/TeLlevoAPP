@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { authGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
@@ -13,26 +14,38 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule),
+    canActivate:[authGuard]
   },
   {
     path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule),
+    canActivate:[authGuard]
   },
   {
     path: 'vista-cliente',
-    loadChildren: () => import('./vista-cliente/vista-cliente.module').then( m => m.VistaClientePageModule)
+    loadChildren: () => import('./vista-cliente/vista-cliente.module').then( m => m.VistaClientePageModule),
+    canActivate:[authGuard]
   },
   {
     path: 'vista-conductor',
-    loadChildren: () => import('./vista-conductor/vista-conductor.module').then( m => m.VistaConductorPageModule)
-  },  {
+    loadChildren: () => import('./vista-conductor/vista-conductor.module').then( m => m.VistaConductorPageModule),
+    canActivate:[authGuard]
+  },
+  {
     path: 'perfil',
-    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule),
+    canActivate:[authGuard]
   },
   {
     path: 'restablecer-contrasena',
-    loadChildren: () => import('./restablecer-contrasena/restablecer-contrasena.module').then( m => m.RestablecerContrasenaPageModule)
+    loadChildren: () => import('./restablecer-contrasena/restablecer-contrasena.module').then( m => m.RestablecerContrasenaPageModule),
+    canActivate:[authGuard]
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule),
+    canActivate:[authGuard]
   },
 
 ];
