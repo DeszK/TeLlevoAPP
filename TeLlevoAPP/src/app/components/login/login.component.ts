@@ -16,15 +16,15 @@ export class LoginComponent  implements OnInit {
   async login(){
     try{
       await this.authService.login(this.email,this.password);
-      alert("logeado con exito");
+      alert("Logeado con exito");
       this.router.navigate(["/inicio"])
-    }catch(error){alert("Error al intentar logearse"+error)}
+    }catch(error){alert("Error al intentar logearse "+error)}
   }
 
   async register(){
     try{
       await this.authService.register(this.email,this.password);
-      alert("registrado con exito"+this.email);
-    }catch(error){alert("Error al intentar registrarse"+error)}
+      alert("Registrado con exito "+this.email);
+    }catch(error){alert("Error al intentar registrarse "+error)}
   }
 }
